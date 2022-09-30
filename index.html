@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="card-container">
+        <div class="logo">RED TEAM  <img src="./resources/tf2logo.png" alt="tf2 logo"></div>
+        <div class="credits">Photo by <a class="photo-link" href="https://unsplash.com/@haliewestphoto">Halie West</a>
+         on <a class="photo-link" href="https://unsplash.com/">unsplash</a></div>
+    </div>
+    <div class="sign-up-form-container">
+        <div class="welcome-message">Stop being a maggot and start being a 
+            real man by joining the RED team</div>
+        <div class="sign-up-message">Sign up know to get a <em>free</em> hat!!!11!1</div>
+        <div class="sign-up-form">
+        <legend>Let's do this!</legend>
+        <form action="./user-information/" method="get">
+            <div class="form-left">
+                <label for="user-first-name">First name</label>
+                <input type="text" id="user-first-name" name="user-first-name" 
+                    placeholder="John" required>
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" name="user-email" 
+                    placeholder="Soldier@mannco.com" required>
+                <label for="user-password">Password</label>
+                <input type="password" id="user-password" name="user-password" 
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}$"
+                title="Your password should be 8 characters long and should contain at least: 
+                1 Uppercase letter. 1 Lowercase letter. 1 number. 1 symbol"
+                required>
+            </div>
+            <div class="form-right">
+                <label for="user-last-name">Last name</label>
+                <input type="text" id="user-last-name" name="user-last-name" 
+                    placeholder="Doe" required>
+                <label for="user-phone-number">Phone number</label>
+                <input type="text" id="user-phone-number" name="user-phone-number" 
+                    placeholder="+59174691733" title="Your phone number should be 
+                    from 6 to 15 digits long including your country code"pattern="\+\d{6,15}">
+                <label for="user-password-confirmation">Confirm password</label>
+                <input type="password" id="user-password-confirmation" 
+                name="user-password-confirmation" required>
+            </div>
+        </div>
+        <div><button type="submit">Create Account</button></div>
+        </form>
+        <div>Already have an account? <a href="log-in-url">Log in</a></div>
+    </div>
+</body>
+</html>
